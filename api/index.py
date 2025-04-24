@@ -10,7 +10,7 @@ def get_progress_percentages():
 
     # IMPORTANT: Vercel servers typically run in UTC.
     # Calculations will be based on UTC unless you implement timezone handling.
-    now = datetime.datetime.utcnow()
+    now = datetime.datetime.now()
 
     # --- Year Progress ---
     start_of_year = datetime.datetime(now.year, 1, 1)
