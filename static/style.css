@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align to top */
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light background for contrast */
+    margin: 0;
+    padding-top: 20px; /* Add some space at the top */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Make items stretch to container width */
+    width: 300px; /* Set a width for the container */
+}
+
+.progress-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Space between bars */
+}
+
+.progress-container {
+    flex-grow: 1; /* Allow container to take up space */
+    height: 25px; /* Height of the bar */
+    border: 2px solid #4682B4; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 3px; /* Padding inside the border */
+    background-color: #ffffff; /* White background */
+    margin-right: 10px; /* Space between bar and label */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.progress-bar {
+    height: 100%; /* Fill the container height */
+    background-color: #4682B4; /* Fill color */
+    border-radius: 5px; /* Slightly rounded corners for the fill */
+    transition: width 0.5s ease-in-out; /* Smooth transition if width changes */
+}
+
+.progress-label {
+    color: #4682B4; /* Label color */
+    font-size: 16px;
+    white-space: nowrap; /* Prevent label from wrapping */
+}
